@@ -1,4 +1,4 @@
-from NOBITAMUSIC.core.bot import SHUKLA
+from NOBITAMUSIC.core.bot import NOBITA
 from NOBITAMUSIC.core.dir import dirr
 from NOBITAMUSIC.core.git import git
 from NOBITAMUSIC.core.userbot import Userbot
@@ -12,7 +12,7 @@ git()
 dbb()
 heroku()
 
-app = SHUKLA()
+app = NOBITA()
 userbot = Userbot()
 api = SafoneAPI()
 
