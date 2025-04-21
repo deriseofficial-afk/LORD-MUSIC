@@ -2,7 +2,7 @@ import asyncio
 from pyrogram.enums import ChatType, ChatMemberStatus
 from NOBITAMUSIC import app
 from pyrogram import filters
-from NOBITAMUSIC.utils.Shukla_ban import admin_filter
+from NOBITAMUSIC.utils.NOBITA_ban import admin_filter
 
 
 
