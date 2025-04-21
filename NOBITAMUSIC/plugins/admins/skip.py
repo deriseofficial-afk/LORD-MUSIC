@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
 from NOBITAMUSIC import YouTube, app
-from NOBITAMUSIC.core.call import SHUKLA
+from NOBITAMUSIC.core.call import NOBITA
 from NOBITAMUSIC.misc import db
 from NOBITAMUSIC.utils.database import get_loop
 from NOBITAMUSIC.utils.decorators import AdminRightsCheck
