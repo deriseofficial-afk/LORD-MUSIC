@@ -1,7 +1,7 @@
 from pyrogram import  filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from NOBITAMUSIC.utils.Shukla_font import Fonts
+from NOBITAMUSIC.utils.Nobita_font import Fonts
 from NOBITAMUSIC import app
 
 @app.on_message(filters.command(["font", "fonts"]))
