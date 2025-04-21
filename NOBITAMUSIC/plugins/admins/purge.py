@@ -3,7 +3,7 @@ from pyrogram import filters
 from pyrogram.enums import ChatType
 from pyrogram.errors import MessageDeleteForbidden, RPCError
 from pyrogram.types import Message
-from NOBITAMUSIC.utils.Nobita_ban import admin_filter
+from NOBITAMUSIC.utils.NOBITA_ban import admin_filter
 from NOBITAMUSIC import app
 
 
