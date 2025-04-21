@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from NOBITAMUSIC import app
-from NOBITAMUSIC.core.call import SHUKLA
+from NOBITAMUSIC.core.call import NOBITA
 from NOBITAMUSIC.misc import SUDOERS, db
 from NOBITAMUSIC.utils import AdminRightsCheck
 from NOBITAMUSIC.utils.database import is_active_chat, is_nonadmin_chat
