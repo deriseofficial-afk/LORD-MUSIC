@@ -18,7 +18,7 @@ from NOBITAMUSIC.utils.database import (
     remove_active_video_chat,
 )
 from NOBITAMUSIC.utils.decorators.language import language
-from NOBITAMUSIC.utils.pastebin import SHUKLABin
+from NOBITAMUSIC.utils.pastebin import NOBITABin
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
