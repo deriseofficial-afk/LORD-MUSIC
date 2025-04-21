@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from NOBITAMUSIC import app
-from NOBITAMUSIC.core.call import SHUKLA
+from NOBITAMUSIC.core.call import NOBITA
 from NOBITAMUSIC.utils.database import set_loop
 from NOBITAMUSIC.utils.decorators import AdminRightsCheck
 from NOBITAMUSIC.utils.inline import close_markup
