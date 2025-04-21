@@ -1,4 +1,4 @@
-from NOBITAMUSIC.utils.Shukla_ban import admin_filter
+from NOBITAMUSIC.utils.Nobita_ban import admin_filter
 import os
 import csv
 from pyrogram import Client, filters
