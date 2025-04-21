@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from NOBITAMUSIC import YouTube, app
-from NOBITAMUSIC.core.call import SHUKLA
+from NOBITAMUSIC.core.call import NOBITA
 from NOBITAMUSIC.misc import db
 from NOBITAMUSIC.utils import AdminRightsCheck, seconds_to_min
 from NOBITAMUSIC.utils.inline import close_markup
