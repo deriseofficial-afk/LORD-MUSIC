@@ -2,7 +2,7 @@ from NOBITAMUSIC import app
 from config import OWNER_ID
 from pyrogram import filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from NOBITAMUSIC.utils.Shukla_ban import admin_filter
+from NOBITAMUSIC.utils.NOBITA_ban import admin_filter
 
 BOT_ID = "6824607634"
 
