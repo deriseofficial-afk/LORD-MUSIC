@@ -1,7 +1,7 @@
 import re
 from NOBITAMUSIC import app
 from config import BOT_USERNAME
-from NOBITAMUSIC.utils.Shukla_ban import admin_filter
+from NOBITAMUSIC.utils.NOBITA_ban import admin_filter
 from NOBITAMUSIC.mongo.filtersdb import *
 from NOBITAMUSIC.utils.filters_func import GetFIlterMessage, get_text_reason, SendFilterMessage
 from NOBITAMUSIC.utils.yumidb import user_admin
