@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from NOBITAMUSIC import app
-from NOBITAMUSIC.core.call import SHUKLA
+from NOBITAMUSIC.core.call import NOBITA
 
 welcome = 20
 close = 30
