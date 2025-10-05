@@ -14,8 +14,8 @@ from NOBITAMUSIC.mongo.couples_db import _get_image, get_couple
 POLICE = [
     [
         InlineKeyboardButton(
-            text="↬꯭ᬃ ⃪꯭𝙎𝙪𝙨𝙖𝙣𝙩.꯭‐».꯭⟶꯭ ᯦💸〞",
-            url=f"https://t.me/IM_SUSANT",
+            text="𝑯𝒚𝒑𝒆𝒓 𝑱𝒐𝒓𝒆𝒏 ⸙",
+            url=f"https://t.me/nooneisminee",
         ),
     ],
 ]
