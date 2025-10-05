@@ -1,26 +1,23 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from NOBITAMUSIC import app
+from NOBITA_MUSIC import app
 from config import BOT_USERNAME
-from NOBITAMUSIC.utils.errors import capture_err
+from NOBITA_MUSIC.utils.errors import capture_err
 import httpx 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-start_txt = """**
-✪ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐅𝐨𝐫 𝐍𝐨𝐛𝐢𝐭𝐚 𝐑𝐞𝐩𝐨𝐬 ✪
+start_txt = """
+✰ 𝗪ᴇʟᴄᴏᴍᴇ ᴛᴏ 𝗥ᴇᴘᴏs ✰
  
- ➲ ᴀʟʟ ʀᴇᴘᴏ ᴇᴀsɪʟʏ ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴇʀʀᴏʀ ✰
+✰ 𝗥ᴇᴘᴏ ᴛᴏ 𝗡ʜɪ 𝗠ɪʟᴇɢᴀ 𝗬ʜᴀ
  
- ➲ ɴᴏ ʜᴇʀᴏᴋᴜ ʙᴀɴ ɪssᴜᴇ ✰
+✰ 𝗣ᴀʜʟᴇ 𝗣ᴀᴘᴀ 𝗕ᴏʟ 𝗥ᴇᴘᴏ 𝗢ᴡɴᴇʀ ᴋᴏ 
+
+✰ || @NoOneIsMinee ||
  
- ➲ ɴᴏ ɪᴅ ʙᴀɴ ɪssᴜᴇ ✰
+✰ 𝗥ᴜɴ 24x7 𝗟ᴀɢ 𝗙ʀᴇᴇ 𝗪ɪᴛʜᴏᴜᴛ 𝗦ᴛᴏᴘ
  
- ➲ ᴜɴʟɪᴍɪᴛᴇᴅ ᴅʏɴᴏs ✰
- 
- ➲ ʀᴜɴ 24x7 ʟᴀɢ ғʀᴇᴇ ᴡɪᴛʜᴏᴜᴛ sᴛᴏᴘ ✰
- 
- ► ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ sᴇɴᴅ ss
-**"""
+"""
 
 
 
@@ -29,77 +26,24 @@ start_txt = """**
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("𝗔𝗗𝗗 𝗠𝗘", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+          InlineKeyboardButton("𝗔ᴅᴅ ᴍᴇ 𝗠ᴀʙʏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
-          InlineKeyboardButton("𝗦𝗨𝗣𝗣𝗢𝗥𝗧", url="https://t.me/NOBITA_MUSIC_SUPPORT"),
-          InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/ll_YOURR_NOBITA_ll"),
+          InlineKeyboardButton("𝗛ᴇʟᴘ", url="https://t.me/Thronex_Chats"),
+          InlineKeyboardButton("𝑯𝒚𝒑𝒆𝒓 𝑱𝒐𝒓𝒆𝒏 †", url="https://t.me/NoOneIsMinee"),
           ],
                [
-                InlineKeyboardButton("𝗨𝗣𝗗𝗔𝗧𝗘𝗦", url="https://t.me/OG_DEFAULTERS_001"),
-
+                InlineKeyboardButton("˹𝖳𝗁𝗋𝗈𝗇𝖾𝗑 ꭙ ꜱᴜᴘᴘᴏʀᴛ˼", url=f"https://t.me/Thronex_botz"),
 ],
 [
-              InlineKeyboardButton("𝗕𝗔𝗡 𝗔𝗟𝗟︎", url=f"https://github.com/itzshukla/STRANGER-BANALL/fork"),
-              InlineKeyboardButton("︎𝗩2 𝗠𝗨𝗦𝗜𝗖", url=f"https://github.com/itzshukla/STRANGER-MUSIC/fork"),
-              ],
-              [
-              InlineKeyboardButton("𝗩1 𝗠𝗨𝗦𝗜𝗖", url=f"https://github.com/itzshukla/STRANGER-MUSIC2.0/fork"),
-InlineKeyboardButton("𝗖𝗛𝗔𝗧 𝗕𝗢𝗧", url=f"https://github.com/itzshukla/STRANGER-CHATBOT/fork"),
-],
-[
-InlineKeyboardButton("𝗦𝗧𝗥𝗜𝗡𝗚𝗕𝗢𝗧", url=f"https://github.com/itzshukla/STRANGER-STRING-GEN/fork"),
-InlineKeyboardButton("𝗠𝗔𝗡𝗔𝗚𝗘𝗠𝗘𝗡𝗧", url=f"https://github.com/itzshukla/STRANGER-ROBOT/fork"),
-],
-[
-              InlineKeyboardButton("𝗦𝗣𝗔𝗠 𝗕𝗢𝗧", url=f"https://github.com/itzshukla/STRANGER-SPAM-X/fork"),
-              InlineKeyboardButton("𝗕𝗔𝗡𝗔𝗟𝗟 10 𝗕𝗢𝗧︎", url=f"https://github.com/itzshukla/STRANGER-BANALL-BOTS/fork"),
-              ],
-              [
-              InlineKeyboardButton("𝗦𝗧𝗥𝗜𝗡𝗚 𝗛𝗔𝗖𝗞︎", url=f"https://github.com/itzshukla/STRANGER-SESSION-HACK/fork"),
-InlineKeyboardButton("𝗜𝗗 𝗖𝗛𝗔𝗧 𝗕𝗢𝗧", url=f"https://github.com/itzshukla/STRANGER-IDCHATBOT/fork"),
-],
-[
-InlineKeyboardButton("𝗨𝗦𝗘𝗥𝗕𝗢𝗧", url=f"https://github.com/itzshukla/STRANGER-USERBOT3.0/fork"),
-InlineKeyboardButton("𝗜𝗗-𝗨𝗦𝗘𝗥𝗕𝗢𝗧", url=f"https://t.me/Shukla_op_clone1bot"),
-],
-[
-InlineKeyboardButton("𝗦𝗨𝗣𝗘𝗥-𝗨𝗦𝗘𝗥𝗕𝗢𝗧", url=f"https://github.com/itzshukla/STRANGER-HELLBOT/fork"),
+InlineKeyboardButton("𝗠ᴀɪɴ 𝗕ᴏᴛ", url=f"https://t.me/HyperxMusicBot"),
 
         ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://telegra.ph/file/d9bddd89a8070632de73e.jpg",
+        photo="https://files.catbox.moe/9b5fx0.webp",
         caption=start_txt,
         reply_markup=reply_markup
     )
- 
-   
-# --------------
-
-
-@app.on_message(filters.command("repo", prefixes="#"))
-@capture_err
-async def repo(_, message):
-    async with httpx.AsyncClient() as client:
-        response = await client.get("https://api.github.com/repos/itzshukla/STRANGER-MUSIC/contributors")
-    
-    if response.status_code == 200:
-        users = response.json()
-        list_of_users = ""
-        count = 1
-        for user in users:
-            list_of_users += f"{count}. [{user['login']}]({user['html_url']})\n"
-            count += 1
-
-        text = f"""[𝖱𝖤𝖯𝖮 𝖫𝖨𝖭𝖪](https://github.com/itzshukla/STRANGER-MUSIC) | [UPDATES](https://t.me/ll_YOURR_NOBITA_ll)
-| 𝖢𝖮𝖭𝖳𝖱𝖨𝖡𝖴𝖳𝖮𝖱𝖲 |
-----------------
-{list_of_users}"""
-        await app.send_message(message.chat.id, text=text, disable_web_page_preview=True)
-    else:
-        await app.send_message(message.chat.id, text="Failed to fetch contributors.")
-
-
