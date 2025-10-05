@@ -1,8 +1,8 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from NOBITA_MUSIC import app
+from NOBITAMUSIC import app
 from config import BOT_USERNAME
-from NOBITA_MUSIC.utils.errors import capture_err
+from NOBITAMUSIC.utils.errors import capture_err
 import httpx 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
