@@ -14,27 +14,27 @@
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "27113246",
+        "value": "21134445",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "11ed0e9b7be6be75dc60ceb71e62e12c",
+        "value": "231c18ea7273824491d6bf05425ab74e",
         "required": true
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "",
+        "value": "8324734290:AAEDUDZIxvuDD4vJgZ6cipkCDz3Ryr02bjw",
         "required": true
       },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com.",
-        "value": "mongodb+srv://dragonbytexbotz:ZYivvnFytzvM9b5l@cluster0.w4qnbpw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "value": "mongodb+srv://susantpc1232_db_user:MsGk2PTlLnzhh2VQ@cluster0.uqxwqld.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
         "required": true
       },
       "OWNER_ID": {
         "description": "The user id of user whom you would like to add as OWNER.",
-        "value": "7727881974",
+        "value": "8156708830",
         "required": true
       },
       "STRING_SESSION": {
@@ -54,7 +54,7 @@
       },
       "LOGGER_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
-        "value": "-1002888072389",
+        "value": " -1002754355006",
         "required": true
       }
     },
@@ -70,4 +70,4 @@
           }
       ],
       "stack": "container"
-  }
+          }
